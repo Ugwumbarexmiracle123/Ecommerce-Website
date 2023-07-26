@@ -1,0 +1,594 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 50px;
+    line-height:64px;
+    color:#222;
+}
+h3{
+    font-size: 46px;
+    line-height: 54px;
+    color:#222;
+}
+h6{
+    font-weight: 700;
+    font-size: 13px;
+}
+p{
+    font-size: 17px;
+    color:dark;
+    margin: 10px 0 20px 0;
+    font-weight:700;
+}
+.section-p1{
+    padding: 40px 80px;
+}
+body{
+    width:100%;
+    cursor: pointer;
+    overflow: auto;
+    
+}
+body::-webkit-scrollbar{
+    display:none ;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index:999;
+    position:sticky;
+    top:0;
+    left:0;
+    width: 100%;
+}
+.logo{
+    width: 80%;
+    height: 55px;
+    position: relative;
+    right: 80px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:#088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+.cart{
+    text-decoration: none;
+}
+#hero{
+    background-image: url("https://img.freepik.com/premium-photo/young-asian-beautiful-woman-is-live-streaming-sell-clothes-social-networking-platforms-e-commerce-sites-this-will-be-future-trend-ecommerce-industry_296537-2027.jpg?w=2000");
+    height: 95vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+#hero h4{
+    padding-bottom: 15px;
+}
+#hero h1{
+    color:#088178;
+}
+#hero button{
+    background-image:yellow;
+    background-color:transparent;
+    color:#088178;
+    border:0;
+    padding:14px 80px 14px 65px;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    font-weight:700;
+    font-size:20px;
+}
+#feature{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#feature .fe-box img{
+    width: 60%;
+    margin-bottom: 10px;
+}
+#feature .fe-box{
+    width: 150px;
+    text-align: center;
+    padding: 25px 15px;
+    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
+    border: 1px solid #cce7d0;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+#feature .fe-box:hover{
+    box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
+}
+
+#feature .fe-box h6{
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #088178;
+    background-color: #fddde4;
+    
+}
+
+#feature .fe-box:nth-child(2) h6{
+    background-color: #cdebbc;
+
+}
+
+#feature .fe-box:nth-child(3) h6{
+    background-color: #d1e8f2;
+}
+
+#feature .fe-box:nth-child(4) h6{
+    background-color: #cdd4f8
+}
+
+#feature .fe-box:nth-child(5) h6{
+    background-color: #f6dbf6;;
+}
+
+#feature .fe-box:nth-child(6) h6{
+    background-color: #fff2e5;
+}
+
+#feature .fe-box:nth-child(6) h6{
+    background-color: #fff2e5;
+}
+.tip{
+    text-align: center;
+}
+.tip h2{
+    font-size: 30px;
+    font-weight: 700;
+}
+.tip span{
+    font-size: 20px;
+    font-weight: 600;
+    color: #088178;
+}
+#product1{
+    text-align: center;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0;
+    left: 20px;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des h5{
+    padding: -2px;
+    color: #1a1a1a;
+    font-size: 18px;
+    top: 5px;
+}
+.checked{
+    color:rgba(255,196,0) ;
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .cart{
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    height: 40px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+#newsletter{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    background-image:linear-gradient(to right bottom, rgba(10, 73, 73,0.8),rgba(10,73,73,0.8)), url("https://www.westend61.de/images/0000493468pw/woman-wearing-black-clothes-crouching-in-front-of-black-background-TCF004465.jpg") ;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-size:cover;
+    margin-bottom: 30px;
+    height: 120px;
+    
+}
+#newsletter h4{
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    right: 8px;
+    margin-top: 10px;
+    bottom: 20px;
+}
+#newsletter p{
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    color: #818ea0;
+    left: 60px;
+    bottom: 20px;
+}
+#newsletter p span{
+    color: #ffbd27;
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+    position: relative;
+    bottom: 20px;
+}
+#newsletter input{
+    height: 3.12rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-radius:0 5px 5px 0;
+    border: 1px solid transparent;
+}
+.imgs{
+    height:50px;
+    width: 10%;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration:none;
+}
+footer{
+   position: relative;
+   width: 100%;
+   bottom:0;
+   left:0;
+   background-color:#fff ;
+   box-shadow: 0 16px 70px -8px rgba(0,0,0,0.25);
+}
+.container{
+    max-width: 110px;
+    padding: 30px 40px;
+    margin: auto;
+}
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.desc{
+    max-width: 350px;
+    margin-bottom: 1.25rem;
+    line-height: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.social a{
+    color: #828282;
+    font-size: 22px;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.social a:hover{
+    color:#313131;
+}
+.footer-shop h2{
+    padding-left: 28px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.footer-shop{
+    position: relative;
+    bottom: 30px;
+}
+.footer-account{
+    position: relative;
+    bottom:30px;
+}
+.footer-account h2{
+    font-size: 25px;
+    font-weight: 500;
+}
+ul li a{
+    text-decoration: none;
+    font-weight: 400;
+    color:#313131 ;
+    font-size: 20px;
+}
+.imagev{
+    width: 20%;
+    height: 55px;
+}
+.imgcard{
+    width:1%;
+    height: 40px;
+}
+.imgcards{
+    width:-8%;
+    height: 60px;
+}
+footer{
+    /* background: #101010;*/
+    background-color: black;
+    column-gap: 15px;
+    padding: 10px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+footer .contain{
+    /* display: flex; */
+    /* position:relativ; */
+    display: flex;
+    /* grid-template-columns: auto auto auto; */
+    justify-content: space-between;
+    width: 100%;
+    column-gap: 40px;
+}
+.single-box{
+    width: 40%;
+    
+}
+.single-box p{
+    color:#fff;
+    line-height: 1.9;
+    /* width: 30%; */
+
+}
+.single-box h3{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.single-box .card-area i{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.single-box ul{
+    list-style: none;
+    padding: 0;
+}
+.single-box ul li a{
+    text-decoration: none;
+    color:#fff;
+    width: 30%;
+    line-height: 2.5;
+    font-weight: 100;
+}
+@media (max-width:799px){
+    body{
+        width: 100%;
+    }
+    .section-p1{
+        padding: 40px 40px;
+    }
+    #navbar{
+       display:flex;
+       flex-direction: column;
+       align-items: flex-start; 
+       justify-content: flex-start;
+       position: fixed;
+       top: 0;
+       right: -350px;
+       height: 100vh;
+       width: 300px;
+       background-color: #E3E6F3;
+       box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+       padding: 80px 0 0 10px;
+       transition: 0.3s;
+    }
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color:#1a1a1a;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .logo{
+        width: 80%;
+        height: 55px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top:30px;
+        left:30px;
+        color:#222;
+        font-size: 24px;
+    }
+    #lg-cart{
+        display: none;
+    }
+    #hero{
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+    #feature{
+        justify-content:center;
+        padding: 0 20px;
+        grid-column: 1fr 1fr 1fr 1fr;
+        position: relative;
+    }
+    #feature .fe-box{
+        margin: 15px 15px;
+    }
+    #product1 .pro-container{
+        justify-content: center;
+       
+    }
+    #product1 .pro{
+        margin: 15px;
+        align-items: center;
+       
+    }
+    #feature .fe-box img{
+        width: 60%;
+        margin-bottom: 10px;
+    }
+    #newsletter .form{
+        display: flex;
+        width: 70%;
+        position: relative;
+        bottom:30px;
+        left: 20%;
+    }
+    #newsletter h4{
+        position: relative;
+        font-size: 22px;
+        font-weight: 600;
+        color: #fff;
+        right: -25px;
+    }
+    .newstext p{
+        position: relative;
+        font-weight: 400;
+        color: #818ea0;
+        right:20px;
+        bottom: 20px;
+    }
+    #newsletter{
+        height: 160px;
+    }
+    
+    
+}
+@media (max-width: 477px){
+    .section-p1{
+        padding: 20px;
+    }
+    #header{
+        padding: 10px 30px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    h3{
+        font-size: 32px;
+    }
+    #hero{
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #feature{
+        justify-content: space-between;
+    }
+    #feature .fe-box{
+        width: 155px;
+        margin: 0 0 15px 0;
+    }
+    #product1 .pro{
+        width: 100%
+    }
+    
+    #newsletter{
+        padding: 40px 20px;
+    }
+    footer .contain{
+        /* text-align: center; */
+        display: flex;
+        /* justify-content: center; */
+        /* margin-bottom: 20px !important; */
+        /* line-height: 2; */
+        flex-direction: column;
+        /* align-items: center; */
+        width: 100%;
+    }
+    .single-box{
+        margin-bottom: 20px;
+    }
+    .single-box h2{
+        color: #fff;
+    }
+}

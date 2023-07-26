@@ -1,0 +1,68 @@
+body{
+   margin:0;
+   padding: 0;
+   background: url("https://img.freepik.com/premium-photo/young-asian-beautiful-woman-is-live-streaming-sell-clothes-social-networking-platforms-e-commerce-sites-this-will-be-future-trend-ecommerce-industry_296537-2027.jpg?w=1000");
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.terms-box{
+    max-width: 460px;
+    background-color: #111;
+    color: #fff;
+    padding: 60px 30px;
+    opacity: 40%;
+}
+.terms-text{
+    padding: 0 20px;
+    height: 400px;
+    overflow-y: auto;
+    font-size: 14px;
+    font-weight: 500;
+    color: #f1f1f1;
+
+}
+.terms-text::-webkit-scrollbar{
+    width:2px;
+    background-color: #282828;
+}
+.terms-text::-webkit-scrollbar-thumb{
+    background-color: #088178;
+}
+.terms-text h2{
+    text-transform: uppercase;
+}
+.terms-box h4{
+    font-size: 13px;
+    text-align: center;
+    padding: 0 40px;
+}
+.terms-box h4 span{
+    color: #088178;
+}
+.button{
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+}
+.btn{
+    height:50px;
+    width: calc(50% - 6px);
+    border:0;
+    font-size: 15px;
+    font-weight: 500;
+    color:#fff;
+    transition: .3s linear;
+    cursor:pointer;
+}
+.red-btn {
+    background-color: #088178;
+    width: 120%;
+}
+.grey-btn{
+    background-color: #282828;
+}
+.btn:hover{
+    opacity: .6;
+}

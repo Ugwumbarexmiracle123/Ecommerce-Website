@@ -1,0 +1,107 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-weight:400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #fff;
+}
+.header{
+    height: 100vh;
+    background-image:url("https://static.vecteezy.com/system/resources/previews/002/871/322/large_2x/young-asian-beautiful-woman-is-live-streaming-to-sell-clothes-on-social-networking-platforms-and-e-commerce-sites-this-will-be-the-future-trend-of-the-ecommerce-industry-photo.jpg");
+    background-size: cover;
+    background-position: top;
+}
+.logo{
+    width: 15%;
+    height: 55px;
+    position: relative;
+    right: 30px;
+}
+    
+h2{
+    color: #777;    
+}
+.text-box{
+    position: absolute;
+    top:45%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.heading-primary{
+    color:#088178;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 40px;
+}
+.heading-primary-main{
+    display: block;
+    font-size: 50px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    padding-left: 27px;
+    
+    animation-name: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+.heading-primary-sub{
+    display: block;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 16px;
+    animation:moveInRight 2s ease-out;
+}
+@keyframes moveInLeft{
+    0%{
+        opacity:0;
+        transform: translateX(-100px);
+    }
+    80%{
+        transform: translateX(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes moveInRight{
+    0%{
+        opacity:0;
+        transform: translateX(100px);
+    }
+    80%{
+        transform: translateX(-10px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.btn:link,
+.btn:visited{
+   text-transform: uppercase;
+   text-decoration: none;
+   padding: 15px 40px; 
+   display: inline-block;
+   border-radius: 100px;
+   transition: all .2s;
+}
+.btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+.btn:active{
+    transform: translateY(-1px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+}
+.btn-white{
+    background-color:#fff;
+    color: #777;
+}

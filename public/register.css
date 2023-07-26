@@ -1,0 +1,122 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../images/eCommerce-Fashion-Brand-Loyalty-Programs.webp);
+}
+.container{
+    max-width: 650px;
+    padding: 28px;
+    margin:0 28px;
+    box-shadow: 0 15px 20px;
+    opacity: 120%;
+}
+h2{
+    font-size: 26px;
+    font-weight: 600;
+    text-align: left;
+    color: rgb(59, 3, 59);
+    padding-bottom: 8px;
+    border-bottom: 1px solid silver;
+}
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding:20px 0;
+}
+.inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding-bottom: 15px;
+}
+.inputBox:nth-child(2n){
+    justify-content: end;
+}
+.inputBox label, .gender-title{
+    width: 95%;
+    color:rgb(34, 8, 58);
+    font-weight: bold;
+    margin: 5px 0;
+}
+.gender-title{
+    font-size: 16px;
+}
+.inputBox input{
+    height: 40px;
+    width:95%;
+    padding: 0 10px;
+    border-radius:5px;
+    outline:none;
+}
+.inputBox input:is(:focus, :valid){
+    box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+.gender-category{
+    color:grey
+}
+.gender-category label{
+    padding: o 20px 0 5px;
+    font-size: 14px;
+}
+.gender-category label, .gender-category input{
+    cursor: pointer;
+}
+.alert{
+    font-size: 14px;
+    font-style: italic;
+    color: dimgray;
+    margin: 5px 0;
+    padding: 10px;
+}
+.alert a{
+    text-decoration: none;
+}
+.alert a:hover{
+    text-decoration: underline;
+}
+.button-container{
+    margin: 15px 0;
+}
+.button-container button{
+    width:600px;
+    margin-top: 10px;
+    padding:10px;
+    display: block;
+    font-size: 20px;
+    color:#fff;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #088178, black);
+}
+.button-container button:hover{
+    background-image: linear-gradient(to right,black, #088178);
+}
+@media(max-width:600px){
+    .container{
+        min-width:100%;
+    }
+    .content{
+        max-height: 380px;
+        overflow: auto;
+    }
+    .inputBox{
+        margin-bottom: 12px;
+        width: 100%;
+    }
+    .inputBox:nth-child(2n){
+        justify-content: space-between;
+    }
+    .button-container button{
+        width:430%;
+    }
+}

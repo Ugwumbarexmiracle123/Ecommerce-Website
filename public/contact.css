@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    cursor: pointer;
+    
+    
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index:999;
+    position:sticky;
+    top:0;
+    left:0;
+}
+.logo img{
+    width: 80%;
+    height: 55px;
+}
+.navbar{
+    display: flex;
+    align-items: top;
+    justify-content: top;
+}
+.navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+.navbar li a:hover,
+.navbar li a.active{
+    color:#088178;
+}
+.navbar li a.active::after,
+.navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#page-header{
+    background-image: url("https://img.freepik.com/premium-photo/online-shopping-concept-young-asian-women-gesturing-present-clothing-fashion-streaming-video_1423-6051.jpg?w=2000");
+    width: 100%;
+    height: 40vh;
+    background-position: 20% 30%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header h2,
+#page-header p{
+    color:#088178;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 35px;
+}
+section{
+    padding: 40px 15%;
+}
+.contact{
+    background: #E3E6F3;
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    align-items: center;
+    grid-gap:6rem;
+    
+}
+.image{
+    max-width: 100%;
+    width: 100%;
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+.contact-form h1{
+    font-size: 60px;
+    color: #088178;
+    margin-bottom: 20px;
+}
+span{
+    color: cadetblue;
+}
+.contact-form p{
+    color: #141416bf;
+    letter-spacing: 1px;
+    line-height: 26px;
+    font-size: 1.1rem;
+    margin-bottom: 3.8rem;
+}
+.contact-form form{
+    position: relative;
+}
+.contact-form form input,
+form textarea{
+    width: 90%;
+    padding: 17px;
+    border: none;
+    outline: none;
+    background: rgb(170, 170, 170);
+    color:#0f0e0e ;
+    font-size: 1.1rem;
+    margin-bottom: 0.7rem;
+    border-radius: 10px;
+}
+.contact-form textarea{
+    resize: none;
+    height: 150px;
+}
+.contact-form form .btn{
+    display: inline-block;
+    background: #088178;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 2px solid transparent;
+    border-radius: 7px;
+    width: 220px;
+    transition: ease .20s;
+    cursor: pointer;
+}
+.contact-form form .btn:hover{
+    border: 2px solid #088178;
+    background: transparent;
+    transform: scale(1.1);
+}
+
+@media (max-width: 1570px){
+    section{
+        padding:80px 3%;
+        transition: 2s;
+    }
+    .contact-form h1{
+        font-size: 40px;
+    }
+    .contact-form p{
+        margin-bottom: 3rem;
+    }
+}
+@media (max-width: 1090px){
+    .contact{
+        grid-gap: 2rem;
+        transition: .3s;
+    }
+}
+@media (max-width: 1000px){
+    .contact{
+        grid-template-columns: 1fr;
+    }
+    .contact-form{
+        order: 2;
+    }
+    .image{
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+}

@@ -1,0 +1,474 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width:100%;
+    cursor: pointer;
+    
+    
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index:999;
+    position:sticky;
+    top:0;
+    left:0;
+    width: 100%;
+}
+.logo{
+    width: 80%;
+    height: 55px;
+    position: relative;
+    right: 80px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:#088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+.cart{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    position: absolute;
+    top: 12%;
+    left: -2%;
+}
+.img-container{
+    width: 100%;
+    display: flex;
+}
+img{
+    width: 100%;
+}
+#page-header{
+    background-image: url("https://img.freepik.com/premium-photo/online-shopping-concept-young-asian-women-gesturing-present-clothing-fashion-streaming-video_1423-6051.jpg?w=2000");
+    width: 100%;
+    height: 40vh;
+    background-position: 20% 30%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    flex-direction: column;
+    padding: 14px;
+}
+#page-header h2,
+#page-header p{
+    color:#fff;
+}
+#product1{
+    text-align: center;
+}
+#product1 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.02);
+    margin: 15px 0;
+    left: 20px;
+    transition: 0.2s ease;
+    position: relative;
+}
+#product1 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+#product1 .pro img{
+    width: 100%;
+    border-radius: 20px;
+}
+#product1 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+}
+
+#product1 .pro .des h5{
+    padding: -2px;
+    color: #1a1a1a;
+    font-size: 18px;
+    top: 5px;
+}
+.checked{
+    color:rgba(255,196,0) ;
+}
+#product1 .pro .des h4{
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+#product1 .pro .cart{
+    width: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    height: 40px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+form div {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.product-name {
+    font-size: 16px;
+}
+  
+.product-price {
+    font-size: 18px;
+}
+  
+.product-quantity, .product-date {
+    font-size: 14px;
+    font-weight: normal;
+}
+  
+.add-to-cart-btn {
+    float: right;
+}
+  
+.pro:hover .admin-controls {
+    display: flex;
+    height: 100%;
+}
+  
+.admin-controls {
+    width: 100%;
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000061;
+    margin: -15px;
+}
+  
+.update-btn, .delete-btn {
+    font-size: 25px;
+    margin: 0px 25px;
+}
+  
+.update-btn {
+    color: green;
+}
+  
+  .delete-btn {
+    color: red;
+}
+  
+.add-new-card {
+    position: sticky;
+    bottom: 15px;
+    left: 89%;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    background-color: rgba(0, 0, 0, 0.175);
+    border-radius: 50%;
+    padding: 20px;
+    cursor: pointer;
+    width:8%;
+}
+  
+.add-new-card i {
+    font-size: 30px;
+}
+#newsletter{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    background-image:linear-gradient(to right bottom, rgba(10, 73, 73,0.8),rgba(10,73,73,0.8)), url("https://www.westend61.de/images/0000493468pw/woman-wearing-black-clothes-crouching-in-front-of-black-background-TCF004465.jpg") ;
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-size:cover;
+    margin-bottom: 30px;
+    height: 120px;
+    
+}
+#newsletter h4{
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+    right: 8px;
+    margin-top: 10px;
+    bottom: 20px;
+}
+#newsletter p{
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    color: #818ea0;
+    left: 60px;
+    bottom: 20px;
+}
+#newsletter p span{
+    color: #ffbd27;
+}
+#newsletter .form{
+    display: flex;
+    width: 40%;
+    position: relative;
+    bottom: 20px;
+}
+#newsletter input{
+    height: 3.12rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: 100%;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+#newsletter button{
+    background-color: #088178;
+    color: #fff;
+    white-space: nowrap;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-radius:0 5px 5px 0;
+    border: 1px solid transparent;
+}
+footer{
+    /* background: #101010;*/
+    background-color: black;
+    column-gap: 15px;
+    padding: 10px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+footer .contain{
+    /* display: flex; */
+    /* position:relativ; */
+    display: flex;
+    /* grid-template-columns: auto auto auto; */
+    justify-content: space-between;
+    width: 100%;
+    column-gap: 40px;
+}
+.single-box{
+    width: 40%;
+    
+}
+.single-box p{
+    color:#fff;
+    line-height: 1.9;
+    /* width: 30%; */
+
+}
+.single-box h3{
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+}
+.single-box .card-area i{
+    color: #fff;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.single-box ul{
+    list-style: none;
+    padding: 0;
+   
+    
+}
+.single-box ul li a{
+    text-decoration: none;
+    color:#fff;
+    width: 30%;
+    line-height: 2.5;
+    font-weight: 100;
+}
+@media (max-width:799px){
+    body{
+        width: 110%;
+        position: relative;
+        left: 0px;
+    }
+    .section-p1{
+        padding: 40px 40px;
+    }
+    #navbar{
+       display:flex;
+       flex-direction: column;
+       align-items: flex-start; 
+       justify-content: flex-start;
+       position: fixed;
+       top: 0;
+       right: -350px;
+       height: 100vh;
+       width: 300px;
+       background-color: #E3E6F3;
+       box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+       padding: 80px 0 0 10px;
+       transition: 0.3s;
+    }
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color:#1a1a1a;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .logo{
+        width: 80%;
+        height: 55px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top:30px;
+        left:30px;
+        color:#222;
+        font-size: 24px;
+    }
+    #lg-cart{
+        display: none;
+    }
+    #hero{
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+    #product1 .pro-container{
+        justify-content: center;
+       
+    }
+    #product1 .pro{
+        margin: 15px;
+        align-items: center;
+       
+    }
+    #feature .fe-box img{
+        width: 60%;
+        margin-bottom: 10px;
+    }
+    #newsletter .form{
+        display: flex;
+        width: 70%;
+        position: relative;
+        bottom:30px;
+        left: 20%;
+    }
+    #newsletter h4{
+        position: relative;
+        font-size: 22px;
+        font-weight: 600;
+        color: #fff;
+        right: -25px;
+    }
+    .newstext p{
+        position: relative;
+        font-weight: 400;
+        color: #818ea0;
+        right:20px;
+        bottom: 20px;
+    }
+    #newsletter{
+        height: 160px;
+    }
+   
+    
+}
+@media (max-width: 477px){
+    .section-p1{
+        padding: 20px;
+    }
+    #header{
+        padding: 10px 30px;
+    }
+    h1{
+        font-size: 38px;
+    }
+    h3{
+        font-size: 32px;
+    }
+    #hero{
+        padding: 0 20px;
+        background-position: 55%;
+    }
+    #product1 .pro{
+        width: 100%
+    }
+    #newsletter{
+        padding: 40px 20px;
+    }
+    .wrapper{
+        align-items: center;
+    }
+    footer .contain{
+        /* text-align: center; */
+        display: flex;
+        /* justify-content: center; */
+        /* margin-bottom: 20px !important; */
+        /* line-height: 2; */
+        flex-direction: column;
+        /* align-items: center; */
+        width: 100%;
+    }
+    .single-box{
+        margin-bottom: 20px;
+    }
+    .single-box h2{
+        color: #fff;
+    }
+}

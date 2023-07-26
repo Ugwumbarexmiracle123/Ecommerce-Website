@@ -1,0 +1,78 @@
+[
+    {
+        "image": "https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/80/9676121/1.jpg?7699",
+        "name": "Beach Flower",
+        "price": "8.5",
+        "rating": "fa fa-star checked, fa fa-star checked, fa fa-star checked,fa fa-star checked,fa fa-star checked"
+    },
+    {
+        "image": "https://i.pinimg.com/originals/a3/98/33/a3983319d309b9b8123e52a59b41be76.png",
+        "name": "Paisley Shirt",
+        "price": "6.7",
+        "rating": "fa fa-star checked, fa fa-star checked, fa fa-star checked,fa fa-star checked,fa fa-star checked"
+    },
+    {
+        "image": "https://ke.jumia.is/unsafe/fit-in/300x300/filters:fill(white)/product/79/8855511/1.jpg?9113",
+        "name": "Floral Shirt",
+        "price": "8.4",
+        "rating": "fa fa-star checked, fa fa-star checked, fa fa-star checked,fa fa-star checked,fa fa-star checked"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/512WlJjGXGL._SR600%2C315_PIWhiteStrip%2CBottomLeft%2C0%2C35_SCLZZZZZZZ_FMpng_BG255%2C255%2C255.jpg",
+        "name": "Olymp Shirt",
+        "price": "7.6",
+        "rating": "fa fa-star checked, fa fa-star checked, fa fa-star checked,fa fa-star checked,fa fa-star checked"
+    },
+    {
+        "image": "https://images-eu.ssl-images-amazon.com/images/I/51xOw937OSL._AC_SR462,693_.jpg",
+        "name": "PrettyChic Trouser",
+        "price": "5.7",
+        "rating": "fa fa-star checked, fa fa-star checked, fa fa-star checked,fa fa-star checked,fa fa-star checked"
+    },
+    {
+        "image": "https://ae01.alicdn.com/kf/H04392ad7df3d40e68279533bc901580fO/1J-jeans-men-s-foreign-trade-hole-patch-straight-tube-men-s-pants-custom-logo-print.jpg",
+        "name": "Patch Hole Trouser",
+        "price": "9.2",
+        "rating": "fa fa-star checked, fa fa-star checked, fa fa-star checked,fa fa-star checked,fa fa-star checked"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/713BHg1CbiS._AC_UY1100_.jpg",
+        "name": "Teveq Trouser",
+        "price": "7.5",
+        "rating": "fa fa-star checked, fa fa-star checked, fa fa-star checked,fa fa-star checked,fa fa-star checked"
+    },
+    {
+        "image": "https://m.media-amazon.com/images/I/61EeXbrU6rL._AC_SX342_.jpg",
+        "name": "Tapered Trouser",
+        "price": "6.5",
+        "rating": "fa fa-star checked, fa fa-star checked, fa fa-star checked,fa fa-star checked,fa fa-star checked"
+    },
+    {
+        "image": "https://rukminim1.flixcart.com/image/450/500/l51d30w0/shoe/z/w/c/10-mrj1914-10-aadi-white-black-red-original-imagft9k9hydnfjp.jpeg?q=90&crop=false",
+        "name": "Sneakers Shoe",
+        "price": "5.9",
+        "rating": "fa fa-star checked, fa fa-star checked, fa fa-star checked,fa fa-star checked,fa fa-star checked"
+    },
+    {
+        "image": "https://www.cartrollers.com/wp-content/uploads/2022/07/MENS-UNIQUE-DESIGNERS-SNEAKERSCANVAS-2.jpeg",
+        "name": "Prada Shoe",
+        "price": "6.5",
+        "rating": "fa fa-star checked, fa fa-star checked, fa fa-star checked,fa fa-star checked,fa fa-star checked",
+        "description": "Prada shoe is a good quality shoe, makes you look cute always"
+    },
+    {
+        "image": "https://images.squarespace-cdn.com/content/v1/517c4edee4b077614f121fc6/1638546413014-F3VOZRWCWRRSMUQTLQT2/mens-high-top-canvas-shoes-white-right-front-61aa3bdfa5b33.jpg?format=2500w",
+        "name": "Suave Shoe",
+        "price": "7.9",
+        "rating": "fa fa-star checked, fa fa-star checked, fa fa-star checked,fa fa-star checked,fa fa-star checked",
+        "description": "Suave red shoe is beautiful and good for jogging"
+    },
+    {
+        "image": "https://ciska.com.ng/wp-content/uploads/2023/02/IMG-20230228-WA0076.jpg",
+        "name": "Versace Shoe",
+        "price": "8.4",
+        "rating": "fa fa-star checked, fa fa-star checked, fa fa-star checked,fa fa-star checked,fa fa-star checked",
+        "description": "Versace Shoe is one of the best shoe"
+    }
+]
+

@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+body{
+    width: 100%;
+}
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: #E3E6F3;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.06);
+    z-index:999;
+    position:sticky;
+    top:0;
+    left:0;
+    width: 100%;
+}
+.logo{
+    width: 80%;
+    height: 55px;
+    position: relative;
+    right: 80px;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li{
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+#navbar li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+}
+#navbar li a:hover,
+#navbar li a.active{
+    color:#088178;
+}
+#navbar li a.active::after,
+#navbar li a:hover::after{
+    content: "";
+    width: 30%;
+    height: 2px;
+    background: #088178;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+#mobile{
+    display: none;
+    align-items: center;
+}
+#close{
+    display: none;
+}
+.cart{
+    text-decoration: none;
+}
+.stock{
+    position: relative;
+    margin-left: 500px;
+    bottom: 380px;
+}
+.stock h1{
+    font-size: 30px;
+    font-weight: 700;
+    padding-bottom: 15px;
+}
+.stock h3{
+    padding-top: 10px;
+}
+.stock h4{
+    padding-top: 10px;
+}
+.pro img{
+    position: relative;
+    margin-top: 130px;
+    padding-left: 40px;
+    border-radius: 5px 5px 5px;
+}
+.container{
+    align-items: center;
+    display:grid;
+    height: 80vh;
+    width: 100%;
+}
+.checked{
+    color:rgba(255,196,0) ;
+}
+.container button{
+    background-color: #088178;
+    color: #fff;
+    top: 18px;
+    position: relative;
+    padding: 10px 15px;
+    border-radius: 8px;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+.container button:hover{
+    background-color: cadetblue;
+    transform: scale(1.1);
+}
+@media (max-width:799px){
+    body{
+        width: 110%;
+        position: relative;
+        left: 0px;
+    }
+    .section-p1{
+        padding: 40px 40px;
+    }
+    #navbar{
+       display:flex;
+       flex-direction: column;
+       align-items: flex-start; 
+       justify-content: flex-start;
+       position: fixed;
+       top: 0;
+       right: -350px;
+       height: 100vh;
+       width: 300px;
+       background-color: #E3E6F3;
+       box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+       padding: 80px 0 0 10px;
+       transition: 0.3s;
+    }
+    #navbar li {
+        margin-bottom: 25px;
+    }
+    #navbar.active{
+        right: 0px;
+    }
+    #mobile{
+        display: flex;
+        align-items: center;
+    }
+    #mobile i{
+        color:#1a1a1a;
+        font-size: 20px;
+        padding-left: 20px;
+    }
+    .logo{
+        width: 80%;
+        height: 55px;
+    }
+    #close{
+        display: initial;
+        position: absolute;
+        top:30px;
+        left:30px;
+        color:#222;
+        font-size: 24px;
+    }
+    #lg-cart{
+        display: none;
+    }
+    #hero{
+        height: 70vh;
+        padding: 0 80px;
+        background-position: top 30% right 30%;
+    }
+    #product1 .pro-container{
+        justify-content: center;
+       
+    }
+    #product1 .pro{
+        margin: 15px;
+        align-items: center;
+       
+    }
+    #feature .fe-box img{
+        width: 60%;
+        margin-bottom: 10px;
+    }
+    #newsletter .form{
+        display: flex;
+        width: 70%;
+        position: relative;
+        bottom:30px;
+        left: 20%;
+    }
+    #newsletter h4{
+        position: relative;
+        font-size: 22px;
+        font-weight: 600;
+        color: #fff;
+        right: -25px;
+    }
+    .newstext p{
+        position: relative;
+        font-weight: 400;
+        color: #818ea0;
+        right:20px;
+        bottom: 20px;
+    }
+    #newsletter{
+        height: 160px;
+    }
+   
+    
+}
+@media screen and (max-width:758px) {
+    .container{
+        width:100%;
+        flex-direction: column;
+        margin: 0;
+        padding: 0px 40px;
+    }
+    .stock{
+        position: relative;
+        width: 50%;
+        top:100px;
+        right: 450px;
+    }
+    .stock h1{
+        font-size: 25px;
+    }
+    .pro img{
+        width: 60%;
+    }
+}
